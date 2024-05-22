@@ -1,0 +1,26 @@
+:root {
+  --size: 50px;
+  --gap: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: repeat(4,var(--size));
+  grid-template-columns: repeat(4,var(--size));
+  border-radius: 10px;
+  background-color: rgba(0, 119, 24, 0.29);
+  gap: var(--gap);
+  width: fit-content;
+  padding: 10px;
+}
+
+.grid-item{
+  height: 50px;
+  width: 50px;
+  background-color: rgba(255, 255, 165, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+}
